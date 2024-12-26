@@ -1,18 +1,61 @@
 public class Passenger {
-    private String ID;
+    private String id;
     private String name;
-    private String gender;
     private int age;
+    private String gender;
     private String phoneNumber;
 
-    public Passenger(String ID, String name, int age, String gender, String phoneNumber){
-        this.ID = ID;
+    public Passenger(String id, String name, int age, String gender, String phoneNumber) {
+        this.id = id;
         this.name = name;
-        this.gender = gender;
         this.age = age;
+        this.gender = gender;
         this.phoneNumber = phoneNumber;
     }
+
+    // Getters và Setters
+    public String getId() {
+        return id;
+    }
+
+    public void setId(String id) {
+        this.id = id;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
     public int getAge() {
         return age;
+    }
+
+    public void setAge(int age) {
+        this.age = age;
+    }
+
+    public String getGender() {
+        return gender;
+    }
+
+    public void setGender(String gender) {
+        this.gender = gender;
+    }
+
+    public String getPhoneNumber() {
+        return phoneNumber;
+    }
+
+    public void setPhoneNumber(String phoneNumber) {
+        this.phoneNumber = phoneNumber;
+    }
+
+    public String toString() {
+        return "ID: " + id + ", Name: " + name + ", Age: " + age +
+                ", Gender: " + gender + ", Phone: " + phoneNumber;
     }
 }
