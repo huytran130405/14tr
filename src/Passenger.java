@@ -55,7 +55,10 @@ public class Passenger {
     }
 
     public String toString() {
-        return "ID: " + id + ", Name: " + name + ", Age: " + age +
+       return "ID: " + id + ", Name: " + name + ", Age: " + age +
                 ", Gender: " + gender + ", Phone: " + phoneNumber;
+ }
+    protected String toCsvString() {
+        return id + "," + name+ "," + age + "," + gender + "," + phoneNumber;
     }
 }
